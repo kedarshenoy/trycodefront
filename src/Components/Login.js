@@ -22,11 +22,13 @@ class Logincomponent extends Component{
         }
         axios({
             method:'POST',
-            url:'http://localhost:5402/login',
+            url:'https://trycode-q15m.onrender.com/login',
+            // url:'http://localhost:5402/login',
+
             headers:{"Content-Type":"Application/json"},
             data:obj
         }).then(result=>{
-            console.log(result.data);
+            // console.log(result.data);
             const navigate=this.props.navigate;
             navigate('/home');
             localStorage.setItem('user',JSON.stringify(result.data.values[0]));

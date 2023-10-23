@@ -85,7 +85,9 @@ class Homecompponent extends Component{
         }
         axios({
             method:'POST',
-            url:'http://localhost:5402/question/filter',
+            url:'https://trycode-q15m.onrender.com/question/filter',
+            // url:'http://localhost:5402/question/filter',
+
             headers:{"Content-Type":"application/json"},
             data:obj
         }).then(result=>{

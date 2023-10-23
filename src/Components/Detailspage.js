@@ -67,7 +67,8 @@ class Detailcomponent extends Component{
         }
     }
     componentDidMount(){
-        axios.get(`http://localhost:5402/question/${this.props.qno.qno}`)
+        // axios.get(`http://localhost:5402/question/${this.props.qno.qno}`)
+        axios.get(`https://trycode-q15m.onrender.com/question/${this.props.qno.qno}`)
         .then(result=>{this.setState({question:result.data.questions[0]})})
         .catch(error=>{console.log(error)})
     }

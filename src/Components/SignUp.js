@@ -35,7 +35,8 @@ class SignUpc extends Component{
 
         axios({
             method:'POST',
-            url:'http://localhost:5402/signup',
+            url:'https://trycode-q15m.onrender.com/signup',
+            // url:'http://localhost:5402/signup',
             headers:{"Content-Type":"Application/json"},
             data:userobj
         }).then(result=>{
